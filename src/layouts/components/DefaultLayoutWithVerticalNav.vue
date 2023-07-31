@@ -4,8 +4,9 @@ import { useThemeConfig } from '@core/composable/useThemeConfig'
 
 // Components
 import Footer from '@/layouts/components/Footer.vue'
-import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
+import Notifications from '@/layouts/components/NavBarNotifications.vue'
 import UserProfile from '@/layouts/components/UserProfile.vue'
+import NavSearchBar from './NavSearchBar.vue'
 
 // @layouts plugin
 import { VerticalNavLayout } from '@layouts'
@@ -31,9 +32,11 @@ const { width: windowWidth } = useWindowSize()
           />
         </IconBtn>
 
-        <NavbarThemeSwitcher />
+        <NavSearchBar />
 
         <VSpacer />
+
+        <Notifications />
 
         <UserProfile />
       </div>
